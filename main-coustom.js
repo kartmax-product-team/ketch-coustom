@@ -722,10 +722,13 @@ function autotype() {
 }
 
 (function mobileFooterAccordian() {
+    console.log('clicked footer')
     if (window.innerWidth <= 767) {
         const mobileItems = document.querySelectorAll('.mobile-footer-item')
         mobileItems.forEach((element, index) => {
             element.addEventListener('click', (e) => {
+    console.log('clicked')
+
                 element.classList.toggle('active')
             })
 
